@@ -27,6 +27,7 @@ body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
+    
 }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
@@ -58,6 +59,7 @@ img {
     margin-left: auto;	
     margin-right: auto;	
     border-radius: 2%;	
+    
 }	
 img:hover {	
     opacity: 80%;	
@@ -137,15 +139,35 @@ button:hover{
 
 @media (max-width:500px){
     .title-container div{
-       background-size: cover;
+       width: 100%;
     }
+
     .artists-container{
-        flex-direction: row;
+        width: 80%;
+        flex-direction: column;
         flex-wrap: wrap;
+        
     }
     .artist{
         width:100%;
-        flex-direction: row;
-        flex-wrap: wrap;
+        
     }
+    nav{
+        width: 60%;
+        justify-content: space-evenly;
+    }
+    .artist img {
+        height: 15vh;
+        width: 50%;
+    }
+    .bio{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.2 rem;
+    }
+    a{
+        font-size: 2rem;
+    }
+    
 }
